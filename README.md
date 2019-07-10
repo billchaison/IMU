@@ -35,7 +35,7 @@ Once VPRISKY has relayed SMB traffic through (C) to (D) and you have observed th
 
 You may wish to monitor WMI and SMB packets on eth0 coming from the firewall's management IP address (A).<br />
 `tcpdump -nn -vv -i eth0 port 135 or port 445`<br />
-If you don't already know the IP address of the Palo Alto's management interface, now you do ... have fun with that.
+If you don't already know the IP address of the Palo Alto's management interface (10.10.22.33), now you do ... have fun with that.
 
 **Accessing the internet**<br />
 At this point the IP address of your attacking machine (C) appears to be used by VPRISKY.  The traffic monitor logs on (A) will show traffic from 10.30.66.77 as coming from CORP\VPRISKY.
